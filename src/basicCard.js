@@ -1,8 +1,12 @@
 
 var BasicCard = function(front, back) {
-
-  this.front = front;
-  this.back = back;
+  //if constructor was called with the "new" keyword
+  if (this instanceof BasicCard) {
+    this.front = front;
+    this.back = back;
+  }
+  //handle case if constructor wasn't called with "new"
+  else return new BasicCard(front, back);
 
 };
 
