@@ -1,7 +1,7 @@
 
 var ClozeCard = function(text, cloze) {
-  //check to make sure text contains the 'cloze' word or phrase so that this can generate a valid card.
-  if (text.indexOf(cloze) !== -1){
+  //check to make sure text contains the 'cloze' word or phrase at the beginning of the card so that this can generate a valid card.
+  if (text.indexOf(cloze) === 0){
   
     //if constructor was called with the "new" keyword
     if (this instanceof ClozeCard) {

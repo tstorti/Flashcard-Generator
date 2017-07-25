@@ -1,7 +1,6 @@
 var ClozeCard = require("./src/clozeCard.js");
 var BasicCard = require("./src/basicCard.js");
 
-
 //test examples:
 
 var firstPresident = BasicCard("Who was the first president of the United States?", "George Washington");
